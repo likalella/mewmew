@@ -30,19 +30,19 @@ class DocumentModel(db.Model):
     )
 
     content = db.Column(
-        db.string(300)
+        db.String(300)
     )
 
     # join할 것
     user_id = db.Column(
         BIGINT(20, unsigned=True),
-        db.ForeignKey('.'.join('users.id')),
+        db.ForeignKey('users.id'),
         nullable=False
     )
 
     # join할 것
     photo_id = db.Column(
         BIGINT(20, unsigned=True),
-        db.ForeignKey('.'.join('photos.id')),
+        db.ForeignKey('photos.id'),
         nullable=False
     )

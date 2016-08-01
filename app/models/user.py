@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 
 from app import db
+
 from sqlalchemy.dialects.mysql import BIGINT, DATE
 
-import datetime
+#import datetime
 
 
 class UserModel(db.Model):

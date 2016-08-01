@@ -51,6 +51,6 @@ class PhotoModel(db.Model):
     # join할 것
     user_id = db.Column(
         BIGINT(20, unsigned=True),
-        db.ForeignKey('.'.join('users.id')),
+        db.ForeignKey('users.id'),
         nullable=False
     )

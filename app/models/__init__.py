@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
-__all__ = ['user',
-           'photo',
-           'document',
-           ]
+__all__ = [
+    'user',
+    'photo',
+    'document'
+]
