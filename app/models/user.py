@@ -45,3 +45,10 @@ class UserModel(db.Model):
         default=gender_enums[0],
         server_default=gender_enums[0]
     )
+
+    def __init__(self, username, password, nickname, birthday, gender):
+        self.username=username
+        self.password=password
+        self.nickname=nickname
+        self.birthday=birthday
+        self.gender=gender

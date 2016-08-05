@@ -46,3 +46,7 @@ class DocumentModel(db.Model):
         db.ForeignKey('photos.id'),
         nullable=False
     )
+
+    def __init__(self, user_id, photo_id):
+        self.user_id = user_id
+        self.photo_id = photo_id

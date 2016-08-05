@@ -54,3 +54,10 @@ class PhotoModel(db.Model):
         db.ForeignKey('users.id'),
         nullable=False
     )
+
+    def __init__(self, title, captured_latitude, captured_longitude, captured_date, user_id):
+        self.title = title
+        self.captured_latitude = captured_latitude
+        self.captured_longitude = captured_longitude
+        self.captured_date = captured_date
+        self.user_id = user_id
